@@ -2,9 +2,9 @@
 /shelf/
 /workspace.xml
 # Rider ignored files
-/contentModel.xml
-/.idea.ASDlab4.iml
+/.idea.asd5.iml
 /projectSettingsUpdater.xml
+/contentModel.xml
 /modules.xml
 # Datasource local storage ignored files
 /dataSources/
