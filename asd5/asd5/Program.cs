@@ -6,9 +6,8 @@ namespace asd5
     {
         public static void Main()
         {
-            Player player = new Player(new Board(4, 4, 1), 5);
+            Player player = new Player(new Board(6, 6, 1), 7);
             player.GenerateDecisionTree();
-            Console.WriteLine(player.NextStep);
         }
     }
 }

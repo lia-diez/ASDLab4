@@ -40,14 +40,14 @@ namespace asd5
             return isMax ? value : value * -1;
         }
         
-        public static void Copy (int[,]? sourceArray, out int[,] destinationArray)
+        public static void Copy (int[,] sourceArray, out int[,] destinationArray)
         {
             destinationArray = new int[sourceArray.GetLength(0), sourceArray.GetLength(1)];
             for (int i = 0; i < destinationArray.GetLength(0); i++)
             {
                 for (int j = 0; j < destinationArray.GetLength(1); j++)
                 {
-                    destinationArray[i, j] = destinationArray[i, j];
+                    destinationArray[i, j] = sourceArray[i, j];
                 }
             }
         }
@@ -59,7 +59,7 @@ namespace asd5
             {
                 for (int j = 0; j < Width; j++)
                 {
-                    output += State[i, j] + " ";
+                    output += State[i, j] + "\t";
                 }
 
                 output += "\n";
